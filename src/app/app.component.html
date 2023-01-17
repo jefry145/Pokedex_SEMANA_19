@@ -1,0 +1,21 @@
+
+
+<div class="row">
+    <div class="col">
+        <h1>POKEDEX</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <input type="text" [(ngModel)]="criterio">
+    </div>
+</div>
+<div class="row">
+    <div class="card col-2 " *ngFor="let elemet of data ">
+    <div class="" *ngFor="let elemet of PokemonName | filterOrder: criterio">
+            {{elemet}}
+    </div>
+           {{elemet.name}}    
+           <img src="{{elemet.image}}" alt="">
+    </div>
+</div>
